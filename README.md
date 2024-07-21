@@ -13,7 +13,7 @@ This project implements a motion detection camera using OpenCV and Python. It ca
 - Python 3.x
 - OpenCV (`cv2`)
 - `winsound` (Windows-specific, for audio alerts)
-- For ubuntu, install `libportaudio2`
+- For ubuntu, install `pygame`
 - For macOS, install `portaudio`
 - Alternative audio libraries (e.g. `pyaudio`) can be used if `winsound` is not available. install `pyaudio` with `pip install pyaudio`
 ## Installation
@@ -88,7 +88,7 @@ Modify the motion sensitivity by changing the threshold value in cv2.threshold(b
 Change the minimum contour area in if cv2.contourArea(c) < 5000: to adjust the sensitivity to small movements.
 
 ### Note
-This script is designed for Windows due to the use of `winsound`. For other operating systems, you'll need to use a different audio library.
+This script is designed for Ubuntu due to the use of pygame. For other operating systems, you'll need to use a different audio library.
 
 ## License
 MIT
